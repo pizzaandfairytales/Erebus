@@ -2,9 +2,9 @@
   "name": "erebus",
   "version": "0.1.0",
   "factorio_version": "2.0",
-  "title": "Erebus – Moon of Vulcanus",
-  "author": "you",
-  "description": "Adds Erebus, a cold and chemically polluted moon orbiting Vulcanus.",
+  "title": "Erebus",
+  "author": "Luxuryenby",
+  "description": "Adds Erebus, a dark but chemically rich moon orbiting Vulcanus.",
   "dependencies": [
     "space-age >= 0.1.0",
     "PlanetsLib"
