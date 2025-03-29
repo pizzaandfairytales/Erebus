@@ -1,5 +1,8 @@
 local planet_catalogue_vulcanus = require("__space-age__.prototypes.planet.procession-catalogue-vulcanus")
 require("prototype.entity.entity")
+local erebus_map_gen = require("prototype.planet.erebus-map-gen")
+local util = require("__core__.lualib.util")
+
 
 
 local erebus = {
@@ -16,7 +19,7 @@ local erebus = {
       scale = 0.5,
     },
   },
-  map_gen_settings = planet_map_gen_erebus.erebus(),
+  map_gen_settings = erebus_map_gen.GetErebusMapSettings(),
   subgroup = "satellites",
   label_orientation = 0.55,
   icon = "__base__/graphics/icons/stone.png",
