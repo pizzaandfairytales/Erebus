@@ -1,1 +1,13 @@
+# macOS system files
 .DS_Store
+
+# Lua artifacts
+*.luac
+
+*.zip
+
+*.log
+
+# Backup files
+*~
+*.bak
