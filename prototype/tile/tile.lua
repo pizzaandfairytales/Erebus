@@ -1,1 +1,1 @@
-require("prototype.tile.tiles-erebus")
+require("prototype.tile.erebus-sulfuric-acid")

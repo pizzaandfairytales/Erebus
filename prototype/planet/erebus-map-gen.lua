@@ -32,6 +32,7 @@ erebus_map_gen.GetErebusMapSettings = function()
 	      ["volcanic-smooth-stone"] = {},
 	      ["volcanic-smooth-stone-warm"] = {},
 	      ["volcanic-ash-cracks"] = {},
+		  ["erebus-sulfuric-acid"] = {frequency = 0.2, size = 0.5, richness = 0.8},
 	    }
 	}
 
