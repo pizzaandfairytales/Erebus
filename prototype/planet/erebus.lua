@@ -44,8 +44,8 @@ local erebus = {
   surface_properties = {
     ["day-night-cycle"] = 5 * 60 * 60,
     ["magnetic-field"] = 120,
-    ["solar-power"] = 120,
-    pressure = 5,
+    ["solar-power"] = 300,
+    pressure = 4000,
     gravity = 0.2
   },
   surface_render_parameters = {

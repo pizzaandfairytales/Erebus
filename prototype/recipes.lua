@@ -20,12 +20,12 @@ data:extend {
 	            icon = data.raw["fluid"]["steam"].icon,
 	        },
 	    },
-	    energy_required = 5,
+	    energy_required = 1,
 	    ingredients = {
 	        { type = "fluid", name = "steam", amount = 500 }
 	    },
 	    results = {
-	        { type = "fluid", name = "erebus-compressed-steam", amount = 50 },
+	        { type = "fluid", name = "erebus-compressed-steam", amount = 250 },
 	    }
 	}
     

@@ -133,10 +133,10 @@ data:extend({
 			effectivity = .6,
 			fuel_inventory_size = 1,
 			emissions_per_minute = { pollution = 2 },
-			usage_priority = "secondary-output",
-			output_flow_limit = "5MJ",
+			usage_priority = "tertiary",
+			output_flow_limit = "5MW",
 		},
-		energy_usage = "500kW",
+		energy_usage = "0kW",
 		ingredient_count = 4
 	},
 	{

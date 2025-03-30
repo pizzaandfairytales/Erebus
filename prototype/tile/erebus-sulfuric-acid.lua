@@ -1,28 +1,48 @@
 local tile_collision_masks = require("__base__.prototypes.tile.tile-collision-masks")
 
-data:extend({
-  {
-    type = "tile",
-    name = "erebus-sulfuric-acid",
-    collision_mask = tile_collision_masks.water(),
-    layer = 71,
-    variants = {
-      main = {
-        {
-          picture = "__base__/graphics/terrain/water/water1.png",
-          count = 1,
-          size = 1,
-          tint = {r = 0.9, g = 1.0, b = 0.3, a = 1}
-        }
-      },
-      empty_transitions = true,
-    },
-    map_color = {r = 0.8, g = 1.0, b = 0.2},
-    absorptions_per_second = {pollution = 0},
-    can_be_part_of_blueprint = false,
+local erebus_sulfuric_acid_tile_color = {r = 0.80, g = 0.70, b = 0.34, a = 1}
+local erebus_sulfuric_acid_tile_color_secondary = {r = 0.94, g = 0.83, b = 0.40, a = 0.25}
+local erebus_sulfuric_acid_tile_shallow_color = {r = 0.80, g = 0.76, b = 0.37, a = 1}
 
-    autoplace = {
-	    probability_expression = .25,
-    }
-  }
+local erebus_sulfuric_acid_shallow_tile = table.deepcopy(data.raw["tile"]["deepwater"])
+erebus_sulfuric_acid_shallow_tile.name = "erebus-sulfuric-acid-shallow"
+erebus_sulfuric_acid_shallow_tile.effect_color = erebus_sulfuric_acid_tile_shallow_color
+erebus_sulfuric_acid_shallow_tile.effect_color_secondary = erebus_sulfuric_acid_tile_color_secondary
+erebus_sulfuric_acid_shallow_tile.fluid = "sulfuric-acid"
+erebus_sulfuric_acid_shallow_tile.autoplace = {
+	probability_expression = 0
+}
+erebus_sulfuric_acid_shallow_tile.allowed_neighbors = { 
+	"volcanic-soil-dark", 
+	"volcanic-soil-light",
+	"volcanic-ash-soil",
+	"volcanic-ash-flats",
+	"volcanic-ash-light",
+	"volcanic-ash-dark",
+	"volcanic-cracks",
+	"volcanic-cracks-warm",
+	"volcanic-folds",
+	"volcanic-folds-flat",
+	"volcanic-folds-warm",
+	"volcanic-pumice-stones",
+	"volcanic-cracks-hot",
+	"volcanic-jagged-ground",
+	"volcanic-smooth-stone",
+	"volcanic-smooth-stone-warm",
+	"volcanic-ash-cracks"
+}
+
+local erebus_sulfuric_acid_tile = table.deepcopy(data.raw["tile"]["deepwater"])
+erebus_sulfuric_acid_tile.name = "erebus-sulfuric-acid"
+erebus_sulfuric_acid_tile.effect_color = erebus_sulfuric_acid_tile_color
+erebus_sulfuric_acid_tile.effect_color_secondary = eberus_sulfuric_acid_tile_color_secondary
+erebus_sulfuric_acid_tile.fluid = "sulfuric-acid"
+erebus_sulfuric_acid_tile.allowed_neighbors = { 
+	"erebus-sulfuric-acid-shallow"
+}
+
+
+
+data:extend({
+	erebus_sulfuric_acid_tile, erebus_sulfuric_acid_shallow_tile
 })
