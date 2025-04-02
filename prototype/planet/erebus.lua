@@ -1,4 +1,5 @@
 local planet_catalogue_vulcanus = require("__space-age__.prototypes.planet.procession-catalogue-vulcanus")
+local asteroid_functions = 
 require("prototype.entity.entity")
 local erebus_map_gen = require("prototype.planet.erebus-map-gen")
 local util = require("__core__.lualib.util")
@@ -50,6 +51,26 @@ local erebus = {
   },
   surface_render_parameters = {
     shadow_opacity = 0.6,
+  },
+  asteroid_spawn_definitions = {
+	  {
+		  type = "entity",
+		  asteroid = "medium-metallic-asteroid",
+		  probability = 0.01,
+		  speed = 0.05,
+	  },
+	  {
+		  type = "entity",
+		  asteroid = "medium-carbonic-asteroid",
+		  probability = 0.001,
+		  speed = 0.05,
+	  },
+	  {
+		  type = "entity",
+		  asteroid = "medium-oxide-asteroid",
+		  probability = 0.001,
+		  speed = 0.05,
+	  }
   }
 }
 

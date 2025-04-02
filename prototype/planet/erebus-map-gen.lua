@@ -3,9 +3,28 @@ local erebus_map_gen = {}
 erebus_map_gen.GetErebusMapSettings = function()
 	local map_gen_setting = table.deepcopy(data.raw.planet.vulcanus.map_gen_settings)
 
-	map_gen_setting.property_expression_names = {}
+    map_gen_setting.property_expression_names = {
+        elevation = "nauvis_elevation",
+        temperature = "vulcanus_temperature",
+        moisture = "nauvis_moisture",
+        aux = "vulcanus_aux",
+        cliffiness = "cliffiness_basic",
+        cliff_elevation = "cliff_elevation_from_elevation",
+		["entity:tungsten-ore:probability"] = "vulcanus_tungsten_ore_probability",
+		      ["entity:tungsten-ore:richness"] = "vulcanus_tungsten_ore_richness",
+		      ["entity:coal:probability"] = "vulcanus_coal_probability",
+		      ["entity:coal:richness"] = "vulcanus_coal_richness",
+		      ["entity:calcite:probability"] = "vulcanus_calcite_probability",
+		      ["entity:calcite:richness"] = "vulcanus_calcite_richness",
+    }
 
-	map_gen_setting.autoplace_controls = {}
+	map_gen_setting.autoplace_controls = {
+	      ["tungsten_ore"] = {},
+	      ["calcite"] = {},
+	      ["iron-ore"] = {},
+	      ["copper-ore"] = {},
+	      ["coal"] = {}
+	}
 
 	map_gen_setting.territory_settings = {}
 
@@ -67,6 +86,11 @@ erebus_map_gen.GetErebusMapSettings = function()
 
 	map_gen_setting.autoplace_settings["entity"] = {
 	    settings = {
+  	      ["tungsten-ore"] = {frequency = 0.9, size = 0.5, richness = 0.4},
+  	      ["calcite"] = {frequency = 0.9, size = 0.5, richness = 0.4},
+  	      ["iron-ore"] = {},
+  	      ["copper-ore"] = {},
+		  ["coal"] = {},
 	      ["huge-volcanic-rock"] = {frequency = 0.15, size = 0.5, richness = 0.4},
 	      ["big-volcanic-rock"] = {frequency = 0.2, size = 0.5, richness = 0.4},
 	      ["crater-cliff"] = {frequency = 0.15, size = 0.4, richness = 0.3},

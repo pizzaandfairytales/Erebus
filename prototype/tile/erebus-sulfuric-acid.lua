@@ -36,6 +36,7 @@ local erebus_sulfuric_acid_tile = table.deepcopy(data.raw["tile"]["deepwater"])
 erebus_sulfuric_acid_tile.name = "erebus-sulfuric-acid"
 erebus_sulfuric_acid_tile.effect_color = erebus_sulfuric_acid_tile_color
 erebus_sulfuric_acid_tile.effect_color_secondary = eberus_sulfuric_acid_tile_color_secondary
+erebus_sulfuric_acid_tile.map_color = erebus_sulfuric_acid_tile_color
 erebus_sulfuric_acid_tile.fluid = "sulfuric-acid"
 erebus_sulfuric_acid_tile.allowed_neighbors = { 
 	"erebus-sulfuric-acid-shallow"
