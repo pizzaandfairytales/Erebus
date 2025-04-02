@@ -13,4 +13,21 @@ data:extend {
 		    gas_temperature = 15,
 		    auto_barrel = false
 		},
+		{
+		    type = "tool",
+		    name = "brimstone-science-pack",
+		    localised_description = {"item-description.science-pack"},
+		    icon = "__erebus__/graphics/icons/brimstone-science-pack.png",
+		    subgroup = "science-pack",
+		    color_hint = { text = "M" },
+		    order = "h",
+		    stack_size = 200,
+		    default_import_location = "erebus",
+		    weight = 1*kg,
+		    durability = 1,
+		    durability_description_key = "description.science-pack-remaining-amount-key",
+		    factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
+		    durability_description_value = "description.science-pack-remaining-amount-value",
+		    random_tint_color = item_tints.bluish_science
+		  },
 }

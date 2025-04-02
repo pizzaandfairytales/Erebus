@@ -11,7 +11,11 @@ data:extend {
 	        type = "unlock-space-location",
 	        space_location = "erebus",
 	        use_icon_overlay_constant = true
-	      }
+	      },
+		  {
+			  type = "unlock-recipe",
+			  recipe = "brimstone-science-pack"
+		  }
 	    },
 	    prerequisites = {"metallurgic-science-pack"},
 	    unit =

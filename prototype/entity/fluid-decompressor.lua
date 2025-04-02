@@ -64,7 +64,7 @@ data:extend({
 	{
 		type = "fusion-generator",
 		name = name,
-		icon = "__erebus__/graphics/icon/thermal-plant.png",
+		icon = "__erebus__/graphics/icons/thermal-plant.png",
 		icon_size = 64,
 		flags = { "placeable-neutral", "placeable-player", "player-creation" },
 		minable = { hardness = 0.2, mining_time = 0.5, result = name },
@@ -143,7 +143,7 @@ data:extend({
 		default_import_location = "erebus",
 		type = "item",
 		name = name,
-		icon = "__erebus__/graphics/icon/thermal-plant.png",
+		icon = "__erebus__/graphics/icons/thermal-plant.png",
 		icon_size = 64,
 		place_result = name,
 		subgroup = "production-machine",

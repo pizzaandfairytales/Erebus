@@ -78,7 +78,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = name,
-        icon = "__erebus__/graphics/icon/mechanical-forge.png",
+        icon = "__erebus__/graphics/icons/mechanical-forge.png",
         icon_size = 64,
         flags = { "placeable-neutral", "placeable-player", "player-creation" },
         minable = { hardness = 0.2, mining_time = 0.5, result = name },
