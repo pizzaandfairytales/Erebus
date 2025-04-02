@@ -94,11 +94,6 @@ erebus_map_gen.GetErebusMapSettings = function()
 	      ["huge-volcanic-rock"] = {frequency = 0.15, size = 0.5, richness = 0.4},
 	      ["big-volcanic-rock"] = {frequency = 0.2, size = 0.5, richness = 0.4},
 	      ["crater-cliff"] = {frequency = 0.15, size = 0.4, richness = 0.3},
-	      ["vulcanus-chimney"] = {frequency = 0.1, size = 0.3, richness = 0.2},
-	      ["vulcanus-chimney-faded"] = {frequency = 0.1, size = 0.3, richness = 0.2},
-	      ["vulcanus-chimney-cold"] = {frequency = 0.15, size = 0.3, richness = 0.25},
-	      ["vulcanus-chimney-short"] = {frequency = 0.1, size = 0.3, richness = 0.2},
-	      ["vulcanus-chimney-truncated"] = {frequency = 0.1, size = 0.3, richness = 0.2},
 	      ["ashland-lichen-tree"] = {frequency = 0.2, size = 0.4, richness = 0.3},
 	      ["ashland-lichen-tree-flaming"] = {frequency = 0.1, size = 0.3, richness = 0.2},
 	    }
